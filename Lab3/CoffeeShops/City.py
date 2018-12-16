@@ -1,3 +1,6 @@
+from Errors import DublicateShops
+
+
 class City:
     def __init__(self, dx, dy):
         self.matrix = [[0] * dx for x in range(dy)]
@@ -16,6 +19,10 @@ class City:
         return res
 
     def add_shop(self, x, y):
+        for shop in self.shops:
+            if shop[0] == x and shop[1] == y:
+                raise DublicateShops([x, y])
+
         self.shops.append([x, y])
 
     def get_number_of_shops_for_position(self, x, y, distance):
