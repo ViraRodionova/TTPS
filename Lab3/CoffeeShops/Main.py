@@ -48,6 +48,6 @@ def main(filename):
     return shops
 
 
-shops = main('inputs/input1')
+# shops = main('inputs/input3')
 
 # print shops
