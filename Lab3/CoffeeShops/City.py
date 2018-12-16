@@ -53,8 +53,8 @@ class City:
                 _tmp = self.matrix[i][j]
                 if _tmp > _max:
                     _max = _tmp
-                    res = [[i, j]]
+                    res = [[i + 1, j + 1]]
                 elif _tmp == _max:
-                    res.append([i, j])
+                    res.append([i + 1, j + 1])
 
         return [_max, res]

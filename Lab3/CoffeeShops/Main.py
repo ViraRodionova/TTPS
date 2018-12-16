@@ -50,4 +50,4 @@ def main(filename):
 
 shops = main('inputs/input1')
 
-print shops
+# print shops
