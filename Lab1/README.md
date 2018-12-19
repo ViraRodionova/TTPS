@@ -4,7 +4,7 @@
 
 Для аналізу було взято файл DiaryActions.js, що відповідає за маніпулювання записами різних типів у щоденнику.
 
-**DiaryActions.js**
+**/shared/actions/DiaryActions.js**
 
 ```javascript
 import moment from 'moment';
